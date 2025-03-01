@@ -92,3 +92,10 @@ variable "admin_group" {
   type        = string
   default     = null
 }
+
+variable "private_dns_zone_ids" {
+  description = "List of private DNS zone IDs to associate with the private endpoint."
+  type        = list(string)
+  default     = []
+
+}
